@@ -1,0 +1,109 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+header{
+    width: 100%;
+    height: 8vh;
+    padding: 10px;
+    background-color: rgb(4, 4, 36);
+}
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    align-items: center;
+    font-size: x-large;
+
+
+}
+ul{
+    display: flex;
+    color: white;
+    width: 70%;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+ a{
+    color: white;
+    text-decoration: none;
+}
+li  {
+    list-style: none;
+}
+ul .fa{
+    margin-right:8px ;
+}
+.active, li:hover{
+    background-color: rgb(37, 37, 88);
+    border-radius: 6px;
+    padding: 12px;
+
+}
+.first-container{
+    background: url(../images/restaurant1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+    width: 100%;
+    backdrop-filter: blur(7px) saturate(70%);
+    background-color: black;
+    position: absolute; 
+    z-index: -1;
+    filter: blur(2px);
+    border-bottom: 1px solid black;
+    
+}
+nav input{
+    background-color: transparent;
+    padding: 6px;
+    border-radius: 12px;
+
+}
+.restaurant{
+    font-size: 3em;
+    font-family: cursive;
+    text-align: center;
+    justify-content: bottom;
+    padding-top: 4em;
+    z-index: 1;
+    color:rgb(226, 116, 25);
+     position: relative; 
+
+}
+.about-div{
+    display: none;
+}
+
+li:hover .about-div{
+    display: block;
+    position: absolute;
+    background-color:rgb(37, 37, 88) ;
+    margin-top: 15px;
+    margin-left: -15px;
+    padding: 3px;
+    gap: 5px;
+    
+}
+
+li:hover .about-div ul{
+display: block;
+margin: 10px;
+}
+li:hover .about-div ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    border-radius: 0;
+    text-align: left;
+}
+
+li:hover .about-div ul li:last-child{
+    border-bottom: none;
+}
+form .fa{
+    margin-right: 9px;
+}
